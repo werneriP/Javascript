@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <!-- script tag is where Javascript goes to -->
+    <script>
+      function omaFunktio() {
+        console.log("Nyt osui");
+        document.write("Laitetaan koko sivu uusiksi.");
+      }
+
+      function toinenFunktio() {
+        location.href = "http://www.iltalehti.fi";
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1 onmouseover=" omaFunktio() ">Welcome to example page</h1>
+    <p
+      ondblclick="toinenFunktio()"
+      onmouseout="console.log('Nyt siirryttiin pois')"
+    >
+      Lorem ipsum dolorem...
+    </p>
+    <button onclick="alert('Hoi Maailma')">Klikkaa mua</button>
+  </body>
+</html>

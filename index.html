@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Demo for Continuous Integration</title>
+		<style>
+			body {
+				font-family: "Trebuchet MS", Helvetica, sans-serif;
+				color: #333333;
+			}
+		</style>
+		
+</head>
+
+
+<p>Demo site for App</p>
+<h1>This page is a placeholder for app deplyed through Netlify/Heroku. </h1>
+<div id="banner">
+
+</div>
+<div id="demo">
+ Hoi Maailma 
+</div>
+<script>
+	var images = [
+		"http://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg",
+		"http://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg",
+		"http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg"
+	];
+	var luku = Math.round(Math.random() * 2);
+	var div = document.getElementById('banner');
+	var demo = document.getElementById('demo');
+	div.innerHTML = `<img src=${images[luku]}>`;
+	var link = `<a href="{${GATSBY_TOKEN}}">Linkki</a>`;
+	demo.innerHTML = link;
+	console.log(link, demo);
+	
+	//"<img src=" + images[luku] + ">" 
+
+</script>
+
+</body>
+
+</html>

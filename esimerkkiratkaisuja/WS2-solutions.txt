@@ -1,0 +1,76 @@
+// EX. 1
+
+// NOTE: Special characters require backslash in front of them, \"
+document.write("<i><strong>\"If I had nine hours to chop down a tree, I’d spend the first six sharpening my ax.\"</strong><br>– Abraham Lincoln</i>");
+
+// DEMO, we can also write IMG -tags 
+// and other content which is loaded from the web
+document.write("<img src='https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnolDrUSX-
+NZBCKTjPLoliz1NLTFzQ2zZMM_Pz6x91A8mwz34r'>");
+
+// EX. 2
+
+function repeatingText() {
+  for (var i=0; i < 50; i++){
+      document.write("Hello World!"); 
+	  }
+	}
+
+	repeatingText();
+	
+
+ // EX. 3
+ 
+ if (navigator.appCodeName = "Mozilla") {
+// DO SOMETHING
+location.href = "http://www.mozilla.org"
+}
+else {
+// DO SOMETHING ELSE
+location.href = "http://www.microsoft.com"
+}
+
+// 2
+function repeatingText(){
+  for(var i=0; i < 50; i++){
+  document.write("Hoi maailma!<br>");
+  }
+}
+repeatingText();
+
+// 3 esim.
+if ( navigator.userAgent.indexOf("Edge") > -1 ){
+navigator.href="http://www.microsoft.com";
+	}
+else{
+navigator.href="http://www.hs.fi"		
+}
+
+// or
+if (navigator.appname ="Mozilla"){
+	navigator.href="http://www.microsoft.com";
+}
+else{
+	navigator.href="http://www.hs.fi"		
+}
+// 4
+
+if (confirm('Where to go?') == true){
+console.log("You pressed ok");
+}
+else {
+you pressed ("Cancel");
+}
+
+//5
+var number = Math.round ( (Math.random() * 2 ) ) ;
+
+var images =[
+"http://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg",
+"http://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg",
+"http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg"
+];
+
+document.write("<img src='https://cdn-images-1.medium.com/max/1600/1*ot7tWiPCYC01pV0kGmK3qQ.png'>");
+
+document.images[0].src = images[number];
